@@ -19,6 +19,11 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    public Car(String color, String name) {
+        this.color = color;
+        this.name = name;
+    }
+
     private String color;
     private String name;
 }
